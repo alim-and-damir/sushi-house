@@ -4,11 +4,11 @@ import { CartItem, Product, User, Category, Achievement, OrderHistoryItem } from
 import { PRODUCTS, CATEGORIES } from '../services/mockData';
 
 export const SUSHI_LEVELS: Achievement[] = [
-  { id: '1', name: 'Новичок', description: 'Ваше первое знакомство с Sushi House. Добро пожаловать в семью!', pointsRequired: 0, icon: '🍣', color: 'bg-emerald-400' },
-  { id: '2', name: 'Гурман', description: 'Вы уже знаете разницу между нигири и роллами. Так держать!', pointsRequired: 100, icon: '🥢', color: 'bg-amber-400' },
-  { id: '3', name: 'Суши-Мастер', description: 'Ваш вкус становится изысканнее. Вы настоящий эксперт!', pointsRequired: 250, icon: '👨‍🍳', color: 'bg-orange-500' },
-  { id: '4', name: 'Магистр Суши', description: 'Вы повелеваете искусством суши. Легендарный уровень!', pointsRequired: 500, icon: '🎌', color: 'bg-stone-600' },
-  { id: '5', name: 'Суши-Монарх', description: 'Вы достигли вершины. Весь мир Sushi House у ваших ног!', pointsRequired: 1000, icon: '👑', color: 'bg-yellow-500' },
+  { id: '1', name: 'Гость', description: 'Добро пожаловать в Sushi House! Начните своё путешествие вкуса.', pointsRequired: 0, icon: '🍱', color: 'bg-emerald-400' },
+  { id: '2', name: 'Знаток', description: 'Вы оценили наше меню и становитесь постоянным гостем.', pointsRequired: 100, icon: '🍙', color: 'bg-amber-400' },
+  { id: '3', name: 'Любитель', description: 'Вы нашли свои любимые блюда и знаете толк в вкусе.', pointsRequired: 250, icon: '🍘', color: 'bg-orange-500' },
+  { id: '4', name: 'Эксперт', description: 'Вы истинный ценитель кухни Sushi House. Почётный гость!', pointsRequired: 500, icon: '🥢', color: 'bg-stone-600' },
+  { id: '5', name: 'Легенда', description: 'Вы — душа Sushi House! VIP-статус и особые привилегии.', pointsRequired: 1000, icon: '🏆', color: 'bg-yellow-500' },
 ];
 
 export const getLevelByPoints = (points: number) => {

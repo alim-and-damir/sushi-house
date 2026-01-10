@@ -88,19 +88,19 @@ export const ProfilePage: React.FC = () => {
   return (
     <div className="pb-32 pt-6 px-4 max-w-lg mx-auto font-sans">
       <div className="flex flex-col items-center mb-8 animate-slide-up relative">
-        {/* Left: Settings button */}
+        {/* Right: Settings button */}
         <button
           onClick={() => setIsEditModalOpen(true)}
-          className="absolute left-0 top-0 p-2 bg-white rounded-full shadow-sm text-slate-500 hover:text-blue-500 transition-colors"
+          className="absolute right-0 top-0 p-2 bg-white rounded-full shadow-sm text-slate-500 hover:text-blue-500 transition-colors"
         >
           <Settings size={20} />
         </button>
 
-        {/* Right: Admin button (only if admin) */}
+        {/* Admin button (only if admin) - moved to left */}
         {isAdmin && (
           <button
             onClick={() => navigate('/admin')}
-            className="absolute right-0 top-0 p-2 bg-[#2F4A5A] rounded-full shadow-sm text-white hover:bg-[#1a2548] transition-colors animate-pop-in"
+            className="absolute left-0 top-0 p-2 bg-[#2F4A5A] rounded-full shadow-sm text-white hover:bg-[#1a2548] transition-colors animate-pop-in"
           >
             <Shield size={20} />
           </button>
