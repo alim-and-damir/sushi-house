@@ -8,12 +8,16 @@ const ADDRESSES = [
   {
     id: 1,
     name: 'Sushi House',
-    address: 'г. Нальчик, Головко 7Е',
-    phone: '+7 928 702-57-88',
+    address: 'ул. Гоголя, 37А, Нальчик',
+    phone: '+7 (906) 483-00-09',
     workTime: [
-      'Пн-Чт: 11:00 - 23:30',
-      'Пт: 14:00 - 23:30',
-      'Сб-Вс: 11:00 - 23:30'
+      'Понедельник: 10:00–03:00',
+      'Вторник: 10:00–03:00',
+      'Среда: 10:00–03:00',
+      'Четверг: 10:00–03:00',
+      'Пятница: 10:00–03:00',
+      'Суббота: 10:00–03:00',
+      'Воскресенье: 10:00–03:00'
     ]
   },
 ];
@@ -28,7 +32,7 @@ export const AddressesPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F3F4F6] pb-24 font-sans">
+    <div className="min-h-screen bg-[#F4F2ED] pb-24 font-sans">
       <div className="bg-white p-4 border-b border-gray-100 sticky top-0 z-50 flex items-center gap-4">
         <button onClick={() => navigate(-1)} className="p-2 -ml-2 text-gray-800 active:scale-90 transition-transform">
           <ArrowLeft size={24} />

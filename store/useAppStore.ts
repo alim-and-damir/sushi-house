@@ -94,7 +94,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   favorites: savedFavorites ? JSON.parse(savedFavorites) : [],
   orderStats: savedStats ? JSON.parse(savedStats) : {},
   lastOperation: null,
-  selectedAddress: savedAddress || 'Нальчик, ул. Толстого, 43',
+  selectedAddress: savedAddress || 'ул. Гоголя, 37А, Нальчик',
 
   setAuth: (user) => {
     // Always recalculate level based on lifetimePoints
