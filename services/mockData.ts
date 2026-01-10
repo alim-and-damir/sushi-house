@@ -13,32 +13,23 @@ export const MOCK_USER: User = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'new', name: 'Новинки' },
-  { id: 'signature', name: 'Фирменное' },
+  { id: 'breakfast', name: 'Завтраки' },
   { id: 'salads', name: 'Салаты' },
-  { id: 'soups', name: 'Супы' },
-  { id: 'noodles', name: 'Лапша' },
-  { id: 'sushi', name: 'Суши' },
-  { id: 'nigiri', name: 'Онигири' },
-  { id: 'gunkan', name: 'Гунканы' },
-  { id: 'classic', name: 'Классические роллы' },
-  { id: 'baked', name: 'Запеченные роллы' },
-  { id: 'cold', name: 'Холодные роллы' },
-  { id: 'fried', name: 'Жаренные роллы' },
-  { id: 'sets', name: 'Сеты' },
   { id: 'snacks', name: 'Закуски' },
-  { id: 'drinks', name: 'Напитки' },
+  { id: 'soups', name: 'Супы' },
+  { id: 'fastfood', name: 'Фаст-фуд' },
+  { id: 'pizza', name: 'Пицца' },
 ];
 
 export const PRODUCTS: Product[] = [
-  // Новинки
+  // Завтраки
   {
     id: 1,
-    name: "Лапша пад тай",
-    description: "Лапша, курица, креветки, яйцо куриное, лук зелёный, соевый росток, арахис жареный, лайм, растительное масло, соус",
-    price: 549,
-    categoryId: "new",
-    imageUrl: "https://static.tildacdn.com/tild3237-3231-4661-b263-623530303466/IMG_2427.JPG",
+    name: "Английский",
+    description: "Классический английский завтрак",
+    price: 550,
+    categoryId: "breakfast",
+    imageUrl: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -47,41 +38,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 2,
-    name: "Лакса суп",
-    description: "Куриный бульон, кокосовое молоко, лапша, курица, креветки, шампиньоны, паста лакса, острый перец, кинза, лук, масло, лайм",
-    price: 599,
-    categoryId: "new",
-    imageUrl: "https://static.tildacdn.com/tild3433-6333-4765-b864-646130616131/IMG_2425_1.jpg",
+    name: "Аристократа",
+    description: "Изысканный завтрак",
+    price: 570,
+    categoryId: "breakfast",
+    imageUrl: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-
-  // Фирменное
-  {
-    id: 3,
-    name: "Бао с говядиной",
-    description: "Булка бао, говядина, майонез, капуста, огурцы, горчица, сыр",
-    price: 459,
-    categoryId: "signature",
-    imageUrl: "https://static.tildacdn.com/tild3636-3530-4135-a533-306636323734/-9040.jpg",
-    modifiers: {
-      sizes: [{ id: 'm', name: '2 шт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-  {
-    id: 4,
-    name: "Бао с креветкой",
-    description: "Булка бао, креветка, сладкий чили соус, капуста, огурцы, сыр",
-    price: 439,
-    categoryId: "signature",
-    imageUrl: "https://static.tildacdn.com/tild3636-3736-4762-b166-633462633637/-9033.jpg",
-    modifiers: {
-      sizes: [{ id: 'm', name: '2 шт', price: 0 }],
       milks: [],
       syrups: []
     }
@@ -89,12 +52,12 @@ export const PRODUCTS: Product[] = [
 
   // Салаты
   {
-    id: 5,
-    name: "Поке с курицей",
-    description: "Курица терияки, кукуруза, помидоры черри, манго, огурцы, рис, сладкий чили соус, листья нори",
-    price: 439,
+    id: 3,
+    name: "Нисуаз",
+    description: "Классический салат никуаз",
+    price: 630,
     categoryId: "salads",
-    imageUrl: "https://static.tildacdn.com/tild3435-6230-4333-a535-636333386165/-8975.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -102,12 +65,95 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    id: 6,
-    name: "Поке с тунцом",
-    description: "Тунец, ким чи, манго, авокадо, огурцы, чука салат, рис, соус тайский чили, соус понзу, шичими, нори",
-    price: 509,
+    id: 4,
+    name: "Капрезе",
+    description: "Салат капрезе с томатами и моцареллой",
+    price: 600,
     categoryId: "salads",
-    imageUrl: "https://static.tildacdn.com/tild3764-6163-4336-b564-343661366436/IMG_5066_resized.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
+  {
+    id: 5,
+    name: "С морепродуктами",
+    description: "Салат с морепродуктами",
+    price: 690,
+    categoryId: "salads",
+    imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
+
+  // Закуски
+  {
+    id: 6,
+    name: "Брускетта с авокадо",
+    description: "Хрустящий багет с авокадо",
+    price: 470,
+    categoryId: "snacks",
+    imageUrl: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
+  {
+    id: 7,
+    name: "Брускетта с лососем",
+    description: "Хрустящий багет с лососем",
+    price: 450,
+    categoryId: "snacks",
+    imageUrl: "https://images.unsplash.com/photo-1549591227-0ec9a2c8f667?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
+  {
+    id: 8,
+    name: "Брускетта с пряной говядиной",
+    description: "Хрустящий багет с пряной говядиной",
+    price: 520,
+    categoryId: "snacks",
+    imageUrl: "https://images.unsplash.com/photo-1552611052-33e04de081de?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
+  {
+    id: 9,
+    name: "Креветки тигровые 150 г",
+    description: "Тигровые креветки 150 грамм",
+    price: 590,
+    categoryId: "snacks",
+    imageUrl: "https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?w=400",
+    modifiers: {
+      sizes: [
+        { id: '150', name: '150 г', price: 0 },
+        { id: '200', name: '200 г', price: 120 }
+      ],
+      milks: [],
+      syrups: []
+    }
+  },
+  {
+    id: 10,
+    name: "Мидии",
+    description: "Мидии в соусе",
+    price: 470,
+    categoryId: "snacks",
+    imageUrl: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -117,292 +163,224 @@ export const PRODUCTS: Product[] = [
 
   // Супы
   {
-    id: 7,
-    name: "Том ям",
-    description: "Бульон, креветки, грибы, помидоры черри, кокосовое молоко, кинза, лайм",
-    price: 609,
-    categoryId: "soups",
-    imageUrl: "https://optim.tildacdn.com/tild6238-3563-4237-a463-353163396235/-/cover/510x510/center/center/-/format/webp/-8991-2.jpg.webp",
-    modifiers: {
-      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-  {
-    id: 8,
-    name: "Том кха",
-    description: "Бульон, куриное филе, грибы, помидоры черри, кокосовое молоко, кинза, лайм",
-    price: 459,
-    categoryId: "soups",
-    imageUrl: "https://optim.tildacdn.com/tild3266-6164-4630-b737-623166346136/-/cover/510x510/center/center/-/format/webp/-8984.jpg.webp",
-    modifiers: {
-      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-
-  // Лапша
-  {
-    id: 9,
-    name: "Соба с курицей",
-    description: "Гречневая лапша, болгарский перец, морковь, лук, имбирь, фирменный соус, чеснок, кунжут, кунжутное масло, курица",
-    price: 459,
-    categoryId: "noodles",
-    imageUrl: "https://static.tildacdn.com/tild6130-6261-4861-b564-386662373138/IMG_0205.JPG",
-    modifiers: {
-      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-  {
-    id: 10,
-    name: "Соба с говядиной",
-    description: "Гречневая лапша, болгарский перец, морковь, лук, имбирь, фирменный соус, чеснок, кунжут, кунжутное масло, говядина",
-    price: 479,
-    categoryId: "noodles",
-    imageUrl: "https://optim.tildacdn.com/tild3435-6438-4439-a635-613365323132/-/cover/266x278/center/center/-/format/webp/IMG_3873.JPG.webp",
-    modifiers: {
-      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-
-  // Суши
-  {
     id: 11,
-    name: "Суши тунец татаки",
-    description: "Рис, васаби, тунец, соус тайский чили",
-    price: 289,
-    categoryId: "sushi",
-    imageUrl: "https://static.tildacdn.com/tild3865-3363-4763-a631-626639613131/IMG_5257_resized.jpg",
+    name: "Том Ям",
+    description: "Острый тайский суп",
+    price: 590,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 12,
-    name: "Суши лосось татаки",
-    description: "Рис, васаби, лосось, карамель, соус том ям",
-    price: 289,
-    categoryId: "sushi",
-    imageUrl: "https://static.tildacdn.com/tild3764-3338-4134-a361-376138366161/IMG_5258_resized.jpg",
+    name: "Крем-суп грибной",
+    description: "Наваристый грибной крем-суп",
+    price: 410,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Онигири
   {
     id: 13,
-    name: "Онигири угорь",
-    description: "Спайси угорь, кунжут, рис, нори",
-    price: 149,
-    categoryId: "nigiri",
-    imageUrl: "https://static.tildacdn.com/tild3331-3037-4430-a164-303432633737/IMG_5223_resized.jpg",
+    name: "Суп-пюре чечевичный",
+    description: "Суп-пюре из чечевицы",
+    price: 380,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '2 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 14,
-    name: "Онигири тунец",
-    description: "Тунец, спайси, рис, нори, шичими",
-    price: 159,
-    categoryId: "nigiri",
-    imageUrl: "https://static.tildacdn.com/tild3366-3964-4365-b361-316164386530/IMG_5227_resized.jpg",
+    name: "Сливочный с лососем",
+    description: "Сливочный суп с лососем",
+    price: 480,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1594756202469-9ff9799b3e4f?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '2 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Гунканы
   {
     id: 15,
-    name: "Гункан краб",
-    description: "Снежный краб, спайси соус",
-    price: 259,
-    categoryId: "gunkan",
-    imageUrl: "https://static.tildacdn.com/tild3239-3637-4630-b934-313561613339/IMG_3697.jpg",
+    name: "Сливочный с креветками",
+    description: "Сливочный суп с креветками",
+    price: 490,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1594756202469-9ff9799b3e4f?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '4 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 16,
-    name: "Гункан креветка",
-    description: "Креветка, яки соус, унаги соус",
-    price: 259,
-    categoryId: "gunkan",
-    imageUrl: "https://static.tildacdn.com/tild3363-3134-4534-b662-613330643464/IMG_3709.jpg",
+    name: "Норвежский",
+    description: "Норвежский суп",
+    price: 570,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '4 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Классические роллы
   {
     id: 17,
-    name: "Саке маки",
-    description: "Лосось",
-    price: 309,
-    categoryId: "classic",
-    imageUrl: "https://optim.tildacdn.com/tild3436-3531-4664-b830-346538623634/-/cover/266x278/center/center/-/format/webp/Velvet-1043_.JPG.webp",
+    name: "Сырный",
+    description: "Сырный суп",
+    price: 450,
+    categoryId: "soups",
+    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-  {
-    id: 18,
-    name: "Эби маки",
-    description: "Креветка",
-    price: 309,
-    categoryId: "classic",
-    imageUrl: "https://optim.tildacdn.com/tild3938-3362-4637-b937-323064626335/-/cover/266x278/center/center/-/format/webp/Velvet-1045_.JPG.webp",
-    modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
 
-  // Запеченные роллы
+  // Фаст-фуд
+  {
+    id: 18,
+    name: "Бургер с куриной котлетой",
+    description: "Бургер с сочной куриной котлетой",
+    price: 430,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+    modifiers: {
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
+      milks: [],
+      syrups: []
+    }
+  },
   {
     id: 19,
-    name: "Вельвет",
-    description: "Креветки, лосось, сливочный сыр, спайси соус, зеленый лук, масаго, краб",
-    price: 559,
-    categoryId: "baked",
-    imageUrl: "https://optim.tildacdn.com/tild3635-3865-4432-a334-616262346333/-/cover/266x278/center/center/-/format/webp/Velvet.jpg.webp",
+    name: "Бургер с говяжьей котлетой",
+    description: "Классический бургер с говяжьей котлетой",
+    price: 450,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 20,
-    name: "Блэк",
-    description: "Угорь, лосось, сливочный сыр, унаги соус, масаго, кунжут",
-    price: 509,
-    categoryId: "baked",
-    imageUrl: "https://optim.tildacdn.com/tild3366-3334-4231-a339-633063323964/-/cover/266x278/center/center/-/format/webp/photo.jpg.webp",
+    name: "Крылья Баффало",
+    description: "Острые крылья Баффало",
+    price: 490,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Холодные роллы
   {
     id: 21,
-    name: "Феникс",
-    description: "Жаренный лосось, креветки, спайси соус, огурцы, пекинская капуста, масаго, авокадо",
-    price: 519,
-    categoryId: "cold",
-    imageUrl: "https://static.tildacdn.com/tild6330-6138-4634-b534-613932373035/IMG_8195.JPG",
+    name: "Наггетсы",
+    description: "Хрустящие наггетсы",
+    price: 460,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 22,
-    name: "Бали",
-    description: "Креветки темпура, лосось, спайси соус, унаги соус, манго",
-    price: 519,
-    categoryId: "cold",
-    imageUrl: "https://static.tildacdn.com/tild3735-6637-4162-b530-353866356433/IMG_8186.JPG",
+    name: "Сэндвич с лососем",
+    description: "Сэндвич с копчёным лососем",
+    price: 450,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Жаренные роллы
   {
     id: 23,
-    name: "Кавасаки",
-    description: "Угорь, лосось, сливочный сыр, спайси соус",
-    price: 509,
-    categoryId: "fried",
-    imageUrl: "https://optim.tildacdn.com/tild6139-6331-4534-a632-643666646565/-/cover/510x510/center/center/-/format/webp/44.JPG.webp",
+    name: "Сэндвич с курицей",
+    description: "Сэндвич с курицей",
+    price: 340,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 24,
-    name: "Лава",
-    description: "Креветки, краб, авокадо, сливочный сыр, спайси соус, унаги соус, зеленый лук",
-    price: 559,
-    categoryId: "fried",
-    imageUrl: "https://optim.tildacdn.com/tild3866-3563-4039-b664-613434616164/-/cover/510x510/center/center/-/format/webp/Velvet-1039_.JPG.webp",
+    name: "Сэндвич с пряной говядиной",
+    description: "Сэндвич с пряной говядиной",
+    price: 380,
+    categoryId: "fastfood",
+    imageUrl: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '8 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
 
-  // Сеты
+  // Пицца
   {
     id: 25,
-    name: "Катана сет",
-    description: "Филадельфия, канада, калифорния лосось",
-    price: 1449,
-    categoryId: "sets",
-    imageUrl: "https://optim.tildacdn.com/tild3032-3266-4564-b739-356539653633/-/cover/510x510/center/center/-/format/webp/IMG_8212.JPG.webp",
+    name: "Пепперони",
+    description: "Пицца с пепперони",
+    price: 480,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: 'На 2 персон', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
   {
     id: 26,
-    name: "Визит сет",
-    description: "Цунами, золотой дракон, феникс, бали",
-    price: 1849,
-    categoryId: "sets",
-    imageUrl: "https://optim.tildacdn.com/tild3065-6536-4561-a364-633339313936/-/cover/510x510/center/center/-/format/webp/IMG_8205.JPG.webp",
+    name: "4 сыра",
+    description: "Пицца с четырьмя видами сыра",
+    price: 550,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: 'На 3 персон', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Закуски
   {
     id: 27,
-    name: "Картофель айдахо",
-    description: "Картошка по-деревенски, кинза, чеснок",
-    price: 259,
-    categoryId: "snacks",
-    imageUrl: "https://optim.tildacdn.com/tild6137-6137-4338-b730-303262383333/-/cover/510x510/center/center/-/format/webp/IMG_3742.jpg.webp",
+    name: "Маргарита",
+    description: "Классическая пицца маргарита",
+    price: 430,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -411,26 +389,24 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 28,
-    name: "Картофельные шарики",
-    description: "Картофельные шарики с сыром и беконом",
-    price: 209,
-    categoryId: "snacks",
-    imageUrl: "https://optim.tildacdn.com/tild3936-6332-4464-b930-323733366639/-/cover/510x510/center/center/-/format/webp/IMG_5403_resized.jpg.webp",
+    name: "Каприччезе",
+    description: "Пицца каприччезе",
+    price: 470,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400",
     modifiers: {
-      sizes: [{ id: 'm', name: '6 шт', price: 0 }],
+      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
       syrups: []
     }
   },
-
-  // Напитки
   {
     id: 29,
-    name: "Кола классическая",
-    description: "Кола классическая",
-    price: 149,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "Цезарь",
+    description: "Пицца цезарь",
+    price: 570,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -439,11 +415,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 30,
-    name: "Kinza",
-    description: "Kinza",
-    price: 149,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "Прованс",
+    description: "Пицца прованс",
+    price: 610,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -452,11 +428,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 31,
-    name: "Barbican",
-    description: "Barbican",
-    price: 149,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "Куриная",
+    description: "Пицца с курицей",
+    price: 450,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -465,11 +441,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 32,
-    name: "Вода",
-    description: "Вода",
-    price: 129,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "Мясная",
+    description: "Мясная пицца",
+    price: 620,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -478,11 +454,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 33,
-    name: "Колд Блю",
-    description: "Колд Блю",
-    price: 129,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "С семгой",
+    description: "Пицца с семгой",
+    price: 800,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
@@ -491,24 +467,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 34,
-    name: "RJ сок",
-    description: "RJ сок",
-    price: 129,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
-    modifiers: {
-      sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
-      milks: [],
-      syrups: []
-    }
-  },
-  {
-    id: 35,
-    name: "Вико",
-    description: "Вико",
-    price: 129,
-    categoryId: "drinks",
-    imageUrl: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400",
+    name: "Хаус",
+    description: "Пицца хаус",
+    price: 560,
+    categoryId: "pizza",
+    imageUrl: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
     modifiers: {
       sizes: [{ id: 'm', name: 'Стандарт', price: 0 }],
       milks: [],
