@@ -298,10 +298,8 @@ export const MenuPage: React.FC = () => {
             <a href="https://instagram.com/sushihouse" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
               <Instagram size={24} />
             </a>
-            <a href="https://wa.me/79991234567" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-green-500 transition-all active:scale-90 border border-gray-50 overflow-hidden">
-              <svg viewBox="0 0 100 100" className="w-10 h-10">
-                <path d="M50,5C25.2,5,5,25.2,5,50c0,8.9,2.4,17.4,6.7,24.9L6.3,88.8l14.6-5.2C28,87.2,38.6,90.8,50,90.8c24.8,0,45-20.2,45-45C95,25.2,74.8,5,50,5z M71.4,67.5c-1,2.9-5,5.3-7,5.6c-1.8,0.2-4.1,0.3-17.6-8.3c-13.5-8.6-22.2-23.1-23.3-25.1c-1.1-2-1.3-3.5-0.4-5.2c0.9-1.7,2.5-2.4,3.4-2.9c0.9-0.5,1.9-0.6,2.7-0.6c0.8,0,1.5,0.1,2.1,0.1c0.6,0,1.5-0.2,2.3,1.5c0.8,1.7,2.9,7.1,3.1,7.6c0.3,0.5,0.4,1.2,0.1,1.9c-0.3,0.7-0.5,1.1-1,1.7c-0.5,0.6-1,1.3-1.4,1.7c-0.5,0.5-1,1-0.4,2c0.6,1,2.6,4.3,5.6,6.9c3.8,3.3,7,4.4,8,4.9c1,0.5,1.6,0.4,2.2-0.3c0.6-0.7,2.5-2.9,3.2-3.9c0.7-1,1.4-0.8,2.3-0.5c0.9,0.3,5.9,2.8,6.9,3.3c1,0.5,1.7,0.8,1.9,1.2C72.4,62.5,72.4,64.6,71.4,67.5z" fill="currentColor" />
-              </svg>
+            <a href="https://wa.me/79991234567" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-green-500 transition-all active:scale-90 border border-gray-50">
+              <img src="https://static.vecteezy.com/system/resources/previews/045/602/361/large_2x/whatsapp-icon-logo-transparent-background-free-png.png" alt="WhatsApp" className="w-9 h-9 object-contain" />
             </a>
           </div>
           <p className="mt-4 text-[9px] text-slate-500 font-bold uppercase tracking-wider">CREATED BY &lt;PowerApp&gt;</p>
