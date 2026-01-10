@@ -293,7 +293,7 @@ export const MenuPage: React.FC = () => {
         )}
 
         <div className="pt-4 pb-6 text-center animate-fade-in stagger-6 opacity-0 fill-mode-forwards">
-          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-3">Мы в соцсетях</p>
+          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-3">Sushi House</p>
           <div className="flex justify-center gap-4">
             <a href="https://instagram.com/sushihouse" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
               <Instagram size={28} />
