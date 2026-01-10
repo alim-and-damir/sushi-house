@@ -27,7 +27,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
     <>
       <div
         onClick={() => setShowQr(true)}
-        className="w-full bg-[#2F4A5A] text-white rounded-[2.5rem] p-4 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
+        className="w-full bg-[#2F4A5A] text-white rounded-[3rem] p-4 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
       >
         <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white rounded-full blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity" />
 
@@ -46,7 +46,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
             <img
               src="https://i.postimg.cc/W1RsqpRB/f85bdc0e-f9dd-4f52-8748-d0e15d6d3da7.png"
               alt="Sushi House Logo"
-              className="h-16 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </div>
 
