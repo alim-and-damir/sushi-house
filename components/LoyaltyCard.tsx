@@ -43,13 +43,11 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
 
           {/* Центральная часть: логотип Sushi House */}
           <div className="flex-1 flex justify-center px-4">
-            <div className="bg-white rounded-2xl px-3 py-2">
-              <img
-                src="https://i.postimg.cc/W1RsqpRB/f85bdc0e-f9dd-4f52-8748-d0e15d6d3da7.png"
-                alt="Sushi House Logo"
-                className="h-16 w-auto object-contain"
-              />
-            </div>
+            <img
+              src="https://i.postimg.cc/W1RsqpRB/f85bdc0e-f9dd-4f52-8748-d0e15d6d3da7.png"
+              alt="Sushi House Logo"
+              className="h-16 w-auto object-contain"
+            />
           </div>
 
           {/* Правая часть: QR кнопка */}
