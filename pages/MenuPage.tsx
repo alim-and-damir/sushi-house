@@ -295,11 +295,11 @@ export const MenuPage: React.FC = () => {
         <div className="pt-4 pb-6 text-center animate-fade-in stagger-6 opacity-0 fill-mode-forwards">
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-3">Мы в соцсетях</p>
           <div className="flex justify-center gap-4">
-            <a href="https://instagram.com/sushihouse" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
-              <Instagram size={24} />
+            <a href="https://instagram.com/sushihouse" target="_blank" rel="noreferrer" className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
+              <Instagram size={28} />
             </a>
-            <a href="https://wa.me/79991234567" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-green-500 transition-all active:scale-90 border border-gray-50">
-              <img src="https://static.vecteezy.com/system/resources/previews/045/602/361/large_2x/whatsapp-icon-logo-transparent-background-free-png.png" alt="WhatsApp" className="w-9 h-9 object-contain" />
+            <a href="https://wa.me/79991234567" target="_blank" rel="noreferrer" className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-green-500 transition-all active:scale-90 border border-gray-50">
+              <img src="https://static.vecteezy.com/system/resources/previews/045/602/361/large_2x/whatsapp-icon-logo-transparent-background-free-png.png" alt="WhatsApp" className="w-11 h-11 object-contain" style={{ filter: 'grayscale(100%)' }} />
             </a>
           </div>
           <p className="mt-4 text-[9px] text-slate-500 font-bold uppercase tracking-wider">CREATED BY &lt;PowerApp&gt;</p>
