@@ -42,7 +42,7 @@ export const AddressesPage: React.FC = () => {
             <div
               key={loc.id}
               onClick={() => handleSelectAddress(loc.address)}
-              className={`bg-white p-5 rounded-3xl shadow-sm border transition-all cursor-pointer active:scale-[0.98] animate-slide-up flex flex-col gap-2 ${
+              className={`bg-white p-5 rounded-3xl shadow-sm border transition-all cursor-pointer active:scale-[0.98] animate-slide-up flex flex-col gap-1 ${
                 isSelected ? 'border-[#2F4A5A] ring-1 ring-[#2F4A5A]' : 'border-gray-100'
               }`}
               style={{ animationDelay: `${idx * 100}ms` }}
