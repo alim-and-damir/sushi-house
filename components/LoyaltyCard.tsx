@@ -37,7 +37,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
             <img
               src={user.avatarUrl}
               alt={user.name}
-              className="w-11 h-11 rounded-full border-2 border-[#ba975f] object-cover"
+              className="w-[46px] h-[46px] rounded-full border-2 border-[#ba975f] object-cover"
             />
           </div>
 
@@ -51,8 +51,8 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
           </div>
 
           {/* QR кнопка - справа */}
-          <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm relative">
-            <QrCode className="w-6 h-6" />
+          <div className="bg-white/10 p-[9px] rounded-xl text-white backdrop-blur-sm relative">
+            <QrCode className="w-[25px] h-[25px]" />
             <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#ba975f] rounded-full animate-pulse shadow-[0_0_5px_rgba(186,151,95,0.8)]" />
           </div>
         </div>
