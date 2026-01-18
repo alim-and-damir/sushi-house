@@ -66,7 +66,7 @@ export const AddressesPage: React.FC = () => {
                 )}
               </div>
 
-              <div className="pt-2 space-y-3">
+              <div className="pt-1 space-y-3">
                 <div className="flex items-start gap-3">
                   <Phone size={16} className="text-slate-400 mt-0.5" />
                   <a href={`tel:${loc.phone}`} className="text-sm font-semibold text-slate-700 hover:text-[#2F4A5A] transition-colors" onClick={e => e.stopPropagation()}>
