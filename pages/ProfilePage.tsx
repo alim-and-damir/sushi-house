@@ -96,16 +96,6 @@ export const ProfilePage: React.FC = () => {
           <Settings size={20} />
         </button>
 
-        {/* Admin button (only if admin) - moved to left */}
-        {isAdmin && (
-          <button
-            onClick={() => navigate('/admin')}
-            className="absolute left-0 top-0 p-2 bg-[#2F4A5A] rounded-full shadow-sm text-white hover:bg-[#1a2548] transition-colors animate-pop-in"
-          >
-            <Shield size={20} />
-          </button>
-        )}
-
         <div className="relative group mb-4">
           <div className="w-24 h-24 rounded-full p-1 border-2 border-dashed border-blue-400 animate-pop-in shadow-inner bg-white overflow-hidden">
             <img src={user.avatarUrl} alt={user.name} className="w-full h-full rounded-full object-cover" />
@@ -113,13 +103,24 @@ export const ProfilePage: React.FC = () => {
         </div>
 
         <h1 className="text-2xl font-bold text-gray-900">{user.name}</h1>
-        <div 
+        <div
           onClick={() => navigate('/achievements')}
           className="flex items-center gap-1.5 bg-blue-50 px-3 py-1 rounded-full mt-2 cursor-pointer active:scale-95 transition-transform"
         >
           <Gift size={12} className="text-blue-600" />
           <p className="text-blue-600 text-xs font-bold uppercase tracking-wider">{user.level}</p>
         </div>
+
+        {/* Admin button (only if admin) - below status button */}
+        {isAdmin && (
+          <button
+            onClick={() => navigate('/admin')}
+            className="flex items-center gap-1.5 bg-[#2F4A5A] px-3 py-1 rounded-full mt-2 cursor-pointer active:scale-95 transition-transform animate-pop-in"
+          >
+            <Shield size={12} className="text-white" />
+            <p className="text-white text-xs font-bold uppercase tracking-wider">АДМИН. ПАНЕЛЬ</p>
+          </button>
+        )}
       </div>
 
       <div className="grid grid-cols-2 gap-4 mb-8">
