@@ -27,33 +27,33 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
     <>
       <div
         onClick={() => setShowQr(true)}
-        className="w-full bg-[#2F4A5A] text-white rounded-[3rem] p-4 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
+        className="w-full bg-[#22305d] text-white rounded-[2.5rem] p-4 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
       >
         <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white rounded-full blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity" />
 
-        <div className="relative z-10 h-16 flex items-center justify-center">
-          {/* Центральный логотип */}
-          <img
-            src="/images/logo.png"
-            alt="Sushi House Logo"
-            className="h-18 w-auto object-contain"
-          />
-
-          {/* Аватар - слева по центру */}
-          <div className="absolute left-4 top-1/2 -translate-y-1/2">
+        <div className="flex items-center justify-between relative z-10">
+          {/* Аватар - слева */}
+          <div className="flex items-center">
             <img
               src={user.avatarUrl}
               alt={user.name}
-              className="w-11 h-11 rounded-full border-2 border-[#D6B24A] object-cover"
+              className="w-11 h-11 rounded-full border-2 border-[#ba975f] object-cover"
             />
           </div>
 
-          {/* QR кнопка - справа по центру */}
-          <div className="absolute right-3 top-1/2 -translate-y-1/2">
-            <div className="bg-white/10 p-2.5 rounded-xl text-white backdrop-blur-sm relative">
-              <QrCode className="w-6 h-6" />
-              <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#D6B24A] rounded-full animate-pulse shadow-[0_0_5px_rgba(186,151,95,0.8)]" />
-            </div>
+          {/* Центральный логотип */}
+          <div className="flex-1 flex justify-center px-4">
+            <img
+              src="/images/logo.png"
+              alt="Sushi House Logo"
+              className="h-7 w-auto object-contain opacity-90"
+            />
+          </div>
+
+          {/* QR кнопка - справа */}
+          <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm relative">
+            <QrCode className="w-6 h-6" />
+            <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#ba975f] rounded-full animate-pulse shadow-[0_0_5px_rgba(186,151,95,0.8)]" />
           </div>
         </div>
       </div>
