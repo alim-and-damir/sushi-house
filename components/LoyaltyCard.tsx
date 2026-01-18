@@ -27,7 +27,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
     <>
       <div
         onClick={() => setShowQr(true)}
-        className="w-full bg-[#2F4A5A] text-white rounded-[2.5rem] p-[14px] shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
+        className="w-full bg-[#2F4A5A] text-white rounded-[2.5rem] p-[12px] shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
       >
         <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white rounded-full blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity" />
 
