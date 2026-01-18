@@ -46,7 +46,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
             <img
               src="/images/logo.png"
               alt="Sushi House Logo"
-              className="max-h-12 w-auto object-contain"
+              className="max-h-16 w-auto object-contain"
             />
           </div>
 
