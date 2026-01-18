@@ -94,7 +94,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   favorites: savedFavorites ? JSON.parse(savedFavorites) : [],
   orderStats: savedStats ? JSON.parse(savedStats) : {},
   lastOperation: null,
-  selectedAddress: savedAddress || 'ул. Гоголя, 37А, Нальчик',
+  selectedAddress: (savedAddress || 'ул. Гоголя, 37А, Нальчик').trim(),
 
   setAuth: (user) => {
     // Always recalculate level based on lifetimePoints
@@ -259,8 +259,9 @@ export const useAppStore = create<AppState>((set, get) => ({
   }),
 
   setSelectedAddress: (address) => {
-    localStorage.setItem('hoffee_address', address);
-    set({ selectedAddress: address });
+    const trimmedAddress = address.trim();
+    localStorage.setItem('hoffee_address', trimmedAddress);
+    set({ selectedAddress: trimmedAddress });
   },
 
   addProduct: (product) => set((state) => ({
